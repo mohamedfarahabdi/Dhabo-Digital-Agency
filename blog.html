@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Dhabo Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding: 40px 0 100px;
+        }
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/dhabo-tech-logo2.jpeg" alt="Dhabo Tech Logo" class="brand-logo">
+            </div>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html" class="active">Blog</a>
+            </nav>
+            <a href="#" class="btn btn-primary btn-sm contact-trigger">Contact</a>
+            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1 class="hero-title">Our Blog</h1>
+                <p class="hero-subtitle" style="margin: 0 auto;">Insights, tips, ideas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG GRID -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-img-wrapper" style="height: 200px;">
+                        <img src="assets/portfolio_website_1777571980728.png" alt="Why Every Business Needs a Website">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Why Every Business Needs a Website</h3>
+                        <p style="margin-bottom: 15px;">Discover the core reasons why a digital presence is no longer optional for growth.</p>
+                        <a href="#" class="learn-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img-wrapper" style="height: 200px;">
+                        <img src="assets/portfolio_branding_1777572394360.png" alt="Top 5 Design Trends in 2025">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Top 5 Design Trends in 2025</h3>
+                        <p style="margin-bottom: 15px;">Stay ahead of the curve with our curated list of upcoming web design aesthetics.</p>
+                        <a href="#" class="learn-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-img-wrapper" style="height: 200px;">
+                        <img src="assets/portfolio_dashboard_1777572219172.png" alt="How to Build a Modern Website">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>How to Build a Modern Website</h3>
+                        <p style="margin-bottom: 15px;">A comprehensive guide to leveraging modern web technologies and frameworks.</p>
+                        <a href="#" class="learn-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER & MODAL -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="assets/dhabo-tech-logo2.jpeg" alt="Dhabo Tech Logo" class="brand-logo">
+                </div>
+                <p class="footer-desc">A creative digital agency dedicated to building premium digital experiences for forward-thinking brands.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-group">
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    
+                    <a href="#">Support</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <p>hello@dhabotech.com</p>
+                    <p>+252687770702</p>
+                    <p>Kismayo, Somalia,<br>Lower Juba</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Dhabo Tech Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+            <h2>Get in Touch</h2>
+            <p>Fill out the form below and we'll get back to you shortly.</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required placeholder="How can we help you?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large" style="width: 100%">Submit Message</button>
+                <div id="formMessage" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
