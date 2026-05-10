@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brand-logo {
-    height: 45px;
+    height: 50px;
     width: auto;
     display: block;
     transition: transform 0.3s ease;
