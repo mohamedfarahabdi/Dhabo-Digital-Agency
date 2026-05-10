@@ -790,6 +790,15 @@ h1, h2, h3, h4, h5, h6 {
     
     .hero-title {
         font-size: 2.5rem;
+        background: none;
+        -webkit-text-fill-color: unset;
+        color: #FFFFFF;
+    }
+
+    .section-title{
+        background: none;
+        -webkit-text-fill-color: unset;
+        color: #FFFFFF;
     }
     
     .features-container, .services-grid, .portfolio-grid {
