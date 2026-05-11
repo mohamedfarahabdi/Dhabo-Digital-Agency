@@ -39,38 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // // Form Submission Simulation
-    // const contactForm = document.getElementById('contactForm');
-    // const formMessage = document.getElementById('formMessage');
-
-    // if (contactForm) {
-    //     contactForm.addEventListener('submit', (e) => {
-    //         e.preventDefault();
-    //         const btn = contactForm.querySelector('button[type="submit"]');
-    //         const originalText = btn.innerText;
-    //         btn.innerText = 'Sending...';
-    //         btn.disabled = true;
-    //         formMessage.innerHTML = '';
-
-    //         // Simulate network request
-    //         setTimeout(() => {
-    //             btn.innerText = originalText;
-    //             btn.disabled = false;
-                
-    //             // Form validation is handled by HTML5 'required' attributes mostly,
-    //             // but we simulate a successful submission here.
-    //             formMessage.innerHTML = '<span class="success-msg">Thank you! Your message has been sent successfully.</span>';
-    //             contactForm.reset();
-                
-    //             // Hide message after a few seconds
-    //             setTimeout(() => {
-    //                 formMessage.innerHTML = '';
-    //                 closeModal();
-    //             }, 3000);
-    //         }, 1500);
-    //     });
-    // }
-
+            // Form Submission 
+ 
 
     const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
